@@ -165,7 +165,7 @@
       if (params['search'] !== undefined) {
         var app = {
           launchApp: function () {
-            window.location.replace("exp://192.168.0.107:19000/--/search?code="+params["search"]);
+            window.location.replace("movinder://search?code="+params["search"]);
             this.timer = setTimeout(console.log('Timeout. App not installed ?'), 2000);
           },
         };
