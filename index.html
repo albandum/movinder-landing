@@ -166,12 +166,8 @@
         var app = {
           launchApp: function () {
             window.location.replace("exp://192.168.0.107:19000/--/search?code="+params["search"]);
-            this.timer = setTimeout(this.openWebApp, 1000);
+            this.timer = setTimeout(console.log('Timeout. App not installed ?'), 2000);
           },
-
-          openWebApp: function () {
-            window.location.replace("http://movinder.app/");
-          }
         };
 
         app.launchApp();
