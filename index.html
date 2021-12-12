@@ -162,10 +162,10 @@
       const urlSearchParams = new URLSearchParams(window.location.search);
       const params = Object.fromEntries(urlSearchParams.entries());
       
-      if (params['code'] !== undefined) {
+      if (params['search'] !== undefined) {
         var app = {
           launchApp: function () {
-            window.location.replace("exp://192.168.0.107:19000/--/search?code="+params["code"]);
+            window.location.replace("exp://192.168.0.107:19000/--/search?code="+params["search"]);
             this.timer = setTimeout(this.openWebApp, 1000);
           },
 
