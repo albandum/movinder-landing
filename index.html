@@ -176,6 +176,7 @@
       if (params['search'] !== undefined) {
         var app = {
           launchApp: function () {
+            console.log('Launching Movinder app..')
             window.location.replace("movinder://search?code="+params["search"]);
             this.timer = setTimeout(console.log('Timeout. App not installed ?'), 2000);
           },
